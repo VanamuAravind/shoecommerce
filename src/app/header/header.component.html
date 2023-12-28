@@ -1,0 +1,36 @@
+<div id="header" class="w-100 p-3 mb-2 d-flex p-2 bd-highlight" style="justify-content: space-between;background-color: white;box-shadow: 0px 3px 10px rgb(177, 177, 177);">
+    <div class="logo" style="flex: 1 1 auto;position: relative;">
+        <img src="assets/images/websitelogo.png" style="position: absolute;left: 0;" />
+    </div>
+    <div class="d-flex align-items-center" style="gap: 20px;flex: 2 1 auto;">
+        <div id="location" (click)="handleclick()">
+            <i id="loc" class="fa-solid fa-location-dot" style="color: #4bce91;"></i>
+            <div>
+                <label style="color: #4bce91;font-weight: bold;">location</label>
+            </div>
+            <i class="fa-solid fa-angle-down" [style.rotate]="rotate" style="transform: translateY(20%);transition: all 0.4s;"></i>
+            <div id="options" [style.height]="height" [style.visibility]="visibility">
+                <label>Delhi</label><hr>
+                <label>Kolkata</label><hr>
+                <label>Hyderabad</label><hr>
+                <label>Chennai</label><hr>
+                <label>Mumbai</label>
+            </div>
+        </div>
+        <div id="search" >
+            <input type="text" placeholder="search for your shoe brand........"/>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <ul id="nav" class="d-flex list-unstyled mt-3" style="flex: 1 1 auto;flex-direction: row-reverse;">
+        <a href="#"><li class="me-2 rounded-pill  py-1 px-3 align-items-center">about</li></a>
+        <a routerLink="/login"><li class="me-2 rounded-pill  py-1 px-3 align-items-center">login</li></a>
+        <a id="home" routerLink="/"><li class="me-2 rounded-pill  py-1 px-3 align-items-center">home</li></a>
+        <div style="display: flex;align-items: center;justify-content: center;background-color: #4bce91;width: 18px;height: 18px;border-radius: 50%;color: black;font-size: 10px;transform: translateX(-150%);z-index: 3;">
+            4
+        </div>
+        <i id="cart" style="display: flex;justify-content: center;align-items: center;transform: translateY(10%);scale: 1.3;margin-right: 20px;" class="fa-solid fa-cart-shopping"  (click)="showcart()"></i>
+    </ul>
+    <cartview id="cartview" [style.visibility]="cartvis"></cartview>
+</div>
+<!-- <router-outlet></router-outlet> -->

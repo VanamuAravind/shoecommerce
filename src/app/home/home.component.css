@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+::-webkit-scrollbar {
+    width: 1px;
+  }
+
+
+.shoe-container{
+    display: flex;
+}
+.shoe-view{
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+label{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #0065a8;
+    font-size: 30px;
+}
+#producttitle{
+    width: 98%;
+    margin:0 2%;
+    transform: translateX(-1%);
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px grey;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#productcontainer{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+}
+
+#topsaveleft{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+#topsaveleft label{
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+}
+#divider{
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divider i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4bce91;
+    background-color: white;
+    width: 20px;
+}
+hr{
+    background-color: darkgreen;
+    width: 100%;
+    border: none;
+    height: 3px;
+}
+
+#topsaveright{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(255, 0, 21);
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 30px;
+    transform: translateY(100%);
+}
+#topsaveright label,i{
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px){
+    /* #producttitle{
+        width: 95vw;
+        margin-right: 20px;
+    } */
+}

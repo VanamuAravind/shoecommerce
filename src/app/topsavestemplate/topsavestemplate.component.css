@@ -1,0 +1,108 @@
+#main-container{
+    width: 248px;
+    height: fit-content;
+    padding: 10px;
+    box-shadow: 0px 0px 2px grey;
+    flex: 1 1 auto;
+}
+#image-holder{
+    width: 100%px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image-holder img{
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5px;
+    padding: 5px 10px;
+}
+#name{
+    font-size: larger;
+    font-weight: bold;
+}
+#dis{
+    color: #4bce91;
+    font-weight: bold;
+    font-size:large;
+}
+#stricked{
+    font-size: small;
+}
+i{
+    color: rgb(255, 208, 0);
+}
+#stock{
+    color: #4bce91;
+
+}
+#add{
+    margin-top: 10px;
+    background-color: lightgrey;
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out;
+}
+#add label{
+    font-weight: bolder;
+    color: rgb(92, 92, 92);
+}
+#add button{
+    position: absolute;
+    right: 5px;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    transform: translateY(-1%);
+    i{
+        color: #4bce91;
+    }
+}
+#add button i{
+    color: #4bce91;
+}
+#bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    scale: 1.6;
+    background-color:#4bce91;
+    /* animation-name: animation;
+    animation-duration: 1s; */
+    animation: animation 0.8s linear 2;
+    animation-delay: 1.8s;
+    z-index: -1;
+}
+
+@keyframes animation{
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1.6;
+    }
+}

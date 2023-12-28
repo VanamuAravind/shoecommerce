@@ -1,0 +1,33 @@
+
+#image-holder{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#image-holder img{
+    height: auto;
+    width: 100px;
+    object-fit: cover;
+}
+#itemdetail{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0px 1px 1px rgb(206, 206, 206);
+    width: 100%;
+    justify-content: space-between;
+}
+#body{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(189, 189, 189);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}

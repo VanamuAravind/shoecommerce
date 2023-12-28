@@ -1,0 +1,62 @@
+
+#subscribe h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+#subscribe h6{
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+    color: white;
+    font-weight: 200;
+}
+#subscribe label{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin: 0;
+}
+a{
+    color: white;
+}
+#subscribe button{
+    margin-top: 20px;
+    width: 40%;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+#footer{
+    padding: 0 20px;
+    position: relative;
+}
+#bg{
+    position: absolute;
+    top: 0px;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+#bgbelow{
+    position: absolute;
+    top: 70px;
+    background-color: #0099ff;
+    /* transform: translateY(48%); */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+@media screen and (max-width: 630px){
+    #bgbelow{
+        position: absolute;
+        top: 20px;
+        background-color: #0099ff;
+        /* transform: translateY(48%); */
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+}

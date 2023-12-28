@@ -1,0 +1,80 @@
+<div id="main-container" (click)="handleClick()">
+    <div id="images-container">
+        <div id="image">
+            <img [src]="productimage" alt="cannot load image" />
+        </div>
+        <div id="back-circle" [style.background-color]="fgcolour"></div>
+        <div id="bg" [style.background-color]="bgcolour"></div>
+    </div>
+    <div id="detail-container" style="padding: 0 10px;">
+        <label style="font-weight: bold;">{{productname}}</label>
+        <div class="d-flex align-items-center" style="gap: 10px;">
+            <label id="dis">{{productcost}}Rs</label>
+            <label id="stricked"><s>6999Rs</s></label>
+        </div>
+    </div>
+    <div class="d-flex" style="gap: 10px;padding: 10px;">
+        <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <label id="stock">in stock</label>
+    </div>
+</div>
+<div id="blur" [style.visibility]="visibility"> 
+</div>
+<div id="showbig-container" [style.visibility]="visibility">
+    <div id="images-container" style="height: 100%;min-width: 50%; box-shadow:0px 0px 10px grey; border-radius: 10px;">
+        <div id="image" style="transition: all 0s;">
+            <img [src]="productimage" alt="cannot load image" />
+        </div>
+        <div id="back-circle" [style.background-color]="fgcolour" style="transition: all 0s;"></div>
+        <div id="bg" [style.background-color]="bgcolour"></div>
+    </div>
+    <div id="detail-container">
+        <div id="detail-container" style="padding: 0 10px;">
+            <label style="font-weight: bold;">{{productname}}</label>
+            <div class="d-flex align-items-center" style="gap: 10px;">
+                <label id="dis">{{productcost}}Rs</label>
+                <label id="stricked"><s>6999Rs</s></label>
+            </div>
+        </div>
+        <div class="d-flex" style="gap: 10px;padding: 10px;">
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <label id="stock">in stock</label>
+        </div>
+        <div id="review">
+            <label style="font-weight: bold; color: #4bce91;">Reviews:</label>
+            <div>
+                <div class="d-flex align-items-center">
+                    <label style="font-size: 15px; font-weight: bold;">Aravind</label>
+                    <div style="scale: 0.6;">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div style="width: 100%;">
+                    <p style="font-size: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ut numquam. Fuga ea quis est harum itaque provident, nihil eveniet rem voluptatibus officiis libero laborum praesentium. Recusandae, impedit reprehenderit amet unde fugiat nisi vero animi saepe provident itaque ea quae illo tenetur sapiente expedita tempora earum dolorum exercitationem possimus ipsa.</p>
+                </div>
+            </div>
+            <div id="buy" class="d-flex justify-content-around" style="width: 100%;gap: 20px;">
+                <button class="btn w-50" [style.background-color]="fgcolour">Add to Cart</button>
+                <button class="btn w-50" [style.background-color]="fgcolour">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" (click)="close()" style="height: fit-content;width: 50px;padding: 3px;position: absolute;top: 0;right: 0; transform: translateY(-120%);">close</button>
+</div>
+
