@@ -23,7 +23,7 @@
                 <label [style.visibility]="vis" [style.color]="txtcolor">{{txt}}</label>
                 <button (click)="animate()" [style.visibility]="vis"><i style="transition: all 0.3s;" [style.rotate]="rot" class="fa-solid fa-plus"></i></button>
                 <button id="anibtn" (click)="animate()" style="transform: translateX(0%);overflow: hidden;" [style.visibility]="visibility">
-                    <i style="color: white;" class="fa-solid fa-check fa-bounce"></i>
+                    <i id="i" style="color: white;" class="fa-solid fa-check fa-bounce"></i>
                     <div id="bg" ></div>
                 </button>
             </div>

@@ -75,9 +75,6 @@ i{
     font-weight: bolder;
     text-align: center;
     transform: translateY(-1%);
-    i{
-        color: #4bce91;
-    }
 }
 #add button i{
     color: #4bce91;
