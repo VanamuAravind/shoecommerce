@@ -14,16 +14,20 @@ export class HomeComponent {
         image:"/assets/images/greyshoe.png"
       },
       {
-        image:"/assets/images/blackyellowshoe.png" , name:"JORDANS"
+        name:"Adidas Shoes",
+        image:"/assets/images/greyshoe.png"
       },
       {
-        image:"/assets/images/greenshoe.png" , name:"NIKE"
+        name:"Adidas Shoes",
+        image:"/assets/images/greyshoe.png"
       },
       {
-        image:"/assets/images/blueshoe.png" , name:"NIKE"
+        name:"Adidas Shoes",
+        image:"/assets/images/greyshoe.png"
       },
       {
-        image:"/assets/images/redshoe.png" , name:"NIKE"
+        name:"Adidas Shoes",
+        image:"/assets/images/greyshoe.png"
       },
       {
         name:"Adidas Shoes",
